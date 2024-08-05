@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0b0b0d;
+  color: white;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.portfolio-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mode-toggle {
+  cursor: pointer;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  width:5.5%;
+  cursor: pointer;
+  margin-left:-45px;
+}
+
+
+
+.portfolio-main h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin-left:40px;
+  margin-bottom:-2px;
+
+}
+
+.projects-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-basis: 480px;
+}
+
+.projects-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-list li:after {
+  content: '';
+  position: absolute;
+  width: 83%;
+  margin-left:40px;
+  height: 1.8px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects-list li:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  max-width: 300%;
+  max-height: 450px;
+  border-radius: 5px;
+}
+
+.portfolio-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 1.3rem;
+  color:rgb(156, 156, 156);
+}
+
+.year-indicator {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 1.5rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+  .close-btn {
+    margin-left:-20px;
+
+  }
+
+}
+

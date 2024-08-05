@@ -1,0 +1,36 @@
+/* ScrollingWords.css */
+.scrolling-words {
+  position: fixed;
+  top: 3;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1; /* To ensure it's above the main content */
+  transform: rotate(12deg); /* Adjust the angle as needed */
+  transition: opacity 0.5s ease;
+}
+
+.scrolling-words.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevents interaction with hidden element */
+}
+
+.word {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  margin-right: 100px; /* Adjust spacing between words */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

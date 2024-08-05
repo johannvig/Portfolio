@@ -1,0 +1,35 @@
+/* ReverseScrollingWords.css */
+.reverse-scrolling-words {
+  position: fixed;
+  top: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1; /* Pour s'assurer que c'est au-dessus du contenu principal */
+  transform: rotate(12deg); /* Ajustez l'angle selon les besoins */
+  transition: opacity 0.5s ease;
+}
+
+.reverse-scrolling-words.hidden {
+  opacity: 0;
+  pointer-events: none; /* Empêche l'interaction avec l'élément caché */
+}
+
+.reverse-scrolling-words .word {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  animation: reverseScroll 10s linear infinite;
+  margin-right: 50px; /* Espacement entre les mots */
+}
+
+@keyframes reverseScroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
