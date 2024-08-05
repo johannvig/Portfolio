@@ -8,7 +8,7 @@ const ThreeBackground = () => {
     let height = window.innerHeight;
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xffffff);
+    scene.background = new THREE.Color(0x050505);
 
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
     const cameraSetBackDist = 7;
