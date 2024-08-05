@@ -14,7 +14,7 @@ const LoadingScreen = () => {
       textAlign: 'center'
     }}>
       <div style={{ marginBottom: '20px' }}>
-        Appuyez sur le bouton <strong>Q</strong> pour quitter la partie et sur les <strong>Flèches</strong> de votre clavier pour vous déplacez
+        Appuyez sur le bouton <strong>Q</strong> pour quitter la partie <br/> Utiliser les <strong>Flèches</strong> pour se déplacer
       </div>
       <div className="loading-spinner">
         
