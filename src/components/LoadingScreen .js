@@ -1,6 +1,25 @@
 import React from 'react';
+import { isMobile } from 'react-device-detect';
 
 const LoadingScreen = () => {
+  if (isMobile) {
+    return (
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        color: 'white',
+        fontSize: '20px',
+        textAlign: 'center'
+      }}>
+        Pour avoir accès à cette page de manière fonctionnelle, vous devez être sur ordinateur.
+      </div>
+    );
+  }
+
   return (
     <div style={{
       display: 'flex',
