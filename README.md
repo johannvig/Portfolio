@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Johanne Vigouroux - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio repository! This project showcases my skills, expertise, and projects in web development and other related fields.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all the dependencies required for the project.
 
 ### `npm start`
 
@@ -35,36 +39,38 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Technologies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Here are some of the technologies and tools used in this portfolio:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Web Development:** HTML, CSS, JavaScript, React, Angular, Symfony, Node.js, PHP
+- **Mobile Development:** Angular, Android Studio
+- **Other Tools:** Python, Java, Docker, MySQL, MongoDB, Redis, Selenium, Postman, Junit, Git, Jira, Trello, Figma
 
-### Code Splitting
+## Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Here are some of the projects featured in this portfolio:
 
-### Analyzing the Bundle Size
+- **Interactive Prototyping:** Creating interactive mockups with Figma for better project visualization.
+- **Application Development and Deployment:** Developing graphical interfaces and deploying them on the web.
+- **Testing and Optimization:** Ensuring applications work correctly and improving performance.
+- **Project Management:** Leading projects from conception to delivery using agile methods.
+- **Administering Complex IT Systems:** Managing complex IT systems to ensure smooth and secure data communication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For a detailed view of all my projects, visit the [Projects](./projects) section of this repository.
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to reach out to me through the following platforms:
 
-### Advanced Configuration
+- **GitHub:** [johannvig](https://github.com/johannvig)
+- **LinkedIn:** [Johanne Vigouroux](https://www.linkedin.com/in/johanne-vigouroux-ab8810244)
+- **Email:** [johanne.vigouroux.etu@univ-lemans.fr](mailto:johanne.vigouroux.etu@univ-lemans.fr)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can now copy and paste this content into your `README.md` file on GitHub.
