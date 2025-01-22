@@ -90,6 +90,10 @@ const ProfilePage = () => {
                   <img src="/images/logo/social.png" alt="Docker" />
                   <span className="tooltiptext">Docker</span>
                 </div>
+                <div className="tooltip">
+                  <img src="https://e7.pngegg.com/pngimages/62/13/png-clipart-microsoft-azure-software-deployment-cloud-computing-infrastructure-as-code-data-center-cloud-computing-blue-angle.png" alt="Azure DevOps" />
+                  <span className="tooltiptext">"Azure DevOps</span>
+                </div>
               </div>
             </div>
             <div className="expertise-card">
@@ -177,12 +181,20 @@ const ProfilePage = () => {
                 <span className="tooltiptext">Node.js</span>
               </div>
               <div className="tooltip">
+                <img src="https://e7.pngegg.com/pngimages/939/2/png-clipart-flask-python-web-framework-representational-state-transfer-software-framework-flask-python-web-application-django.png" alt="Flask" />
+                <span className="tooltiptext">Flask</span>
+              </div>
+              <div className="tooltip">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" />
                 <span className="tooltiptext">React</span>
               </div>
               <div className="tooltip">
                 <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular" />
                 <span className="tooltiptext">Angular</span>
+              </div>
+              <div className="tooltip">
+                <img src="https://image.pngaaa.com/401/7820401-middle.png" alt="Next.js" />
+                <span className="tooltiptext">Next.js</span>
               </div>
               <div className="tooltip">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="Javascript" />
@@ -200,6 +212,10 @@ const ProfilePage = () => {
               <div className="tooltip">
                 <img src="https://cdn.worldvectorlogo.com/logos/android-studio-1.svg" alt="Android Studio" />
                 <span className="tooltiptext">Android Studio</span>
+              </div>
+              <div className="tooltip">
+                <img src="https://i.pinimg.com/736x/9d/84/09/9d8409f31712045b9741288acef0059e.jpg" alt="Flutter" />
+                <span className="tooltiptext">Flutter</span>
               </div>
             </div>
           </div>
