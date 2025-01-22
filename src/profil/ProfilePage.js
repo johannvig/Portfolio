@@ -181,7 +181,7 @@ const ProfilePage = () => {
                 <span className="tooltiptext">Node.js</span>
               </div>
               <div className="tooltip">
-                <img src="/images/logo/flask.png" alt="Flask" />
+                <img src="/images/logo/flask.jpg" alt="Flask" />
                 <span className="tooltiptext">Flask</span>
               </div>
               <div className="tooltip">
@@ -214,7 +214,7 @@ const ProfilePage = () => {
                 <span className="tooltiptext">Android Studio</span>
               </div>
               <div className="tooltip">
-                <img src="/images/logo/flutter.jpg" alt="Flutter" />
+                <img src="/images/logo/flutter.png" alt="Flutter" />
                 <span className="tooltiptext">Flutter</span>
               </div>
             </div>
