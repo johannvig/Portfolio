@@ -50,7 +50,7 @@ const ProfilePage = () => {
         <section className="profile-about">
           <h1>À propos</h1>
           <h2>Johanne Vigouroux</h2>
-          <p>J’ai débuté mon parcours académique en informatique à l'IUT de Laval avant de poursuivre mes études à l'Université du Québec à Chicoutimi (UQAC) en tant qu'étudiante dans un programme bi-diplômant. Actuellement en 3ème année d'informatique, je m'immerge pleinement dans chaque projet en me concentrant sur un code propre et des solutions efficaces.</p>
+          <p>J’ai débuté mon parcours académique en informatique à l'IUT de Laval avant de poursuivre mes études à l'Université du Québec à Chicoutimi (UQAC) en tant qu'étudiante dans un programme bi-diplômant. Actuellement en 1ère année d'ingénieur logicielle à l'IMT Atlantique, je m'immerge pleinement dans chaque projet en me concentrant sur un code propre et des solutions efficaces.</p>
           <p>Je conçois des solutions web en utilisant un large éventail de technologies, allant des langages de base tels que HTML, CSS et JavaScript, à PHP et divers frameworks comme Angular IONIC, Node.js et Symfony.</p>
           <p>Je maîtrise également la programmation orientée objet ainsi que les design patterns, grâce à mon expérience avec les langages Java et Python.</p>
         </section>
@@ -268,3 +268,4 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
+
