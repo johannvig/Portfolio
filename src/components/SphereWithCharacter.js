@@ -142,18 +142,6 @@ const FollowCamera = React.forwardRef(({ targetRef, radius }, ref) => {
   return <PerspectiveCamera ref={(instance) => { ref.current = instance; localCameraRef.current = instance; }} makeDefault fov={75} />;
 });
 
-function mergeRefs(refs) {
-  return (value) => {
-    refs.forEach((ref) => {
-      if (typeof ref === 'function') {
-        ref(value);
-      } else if (ref != null) {
-        ref.current = value;
-      }
-    });
-  };
-}
-
 const SphereWithCharacter = () => {
   const radius = 20;
   const characterRef = useRef();

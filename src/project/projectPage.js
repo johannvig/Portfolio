@@ -69,7 +69,7 @@ const ProjectsPage = () => {
       </main>
       <footer className="portfolio-footer">
         <p>PORTFOLIO</p>
-        <div className="year-indicator">2024</div>
+        <div className="year-indicator">2026</div>
       </footer>
       <div className="inner-cursor"></div>
       <div className="outer-cursor"></div>

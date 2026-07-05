@@ -6,11 +6,13 @@ import ProjectsPage from './project/projectPage';
 import ProjectDetails from './project_details/ProjectDetails';
 import HomePage from './homepage/HomePage';
 import ErrorBoundary from './components/ErrorBoundary';
+import TopNavigation from './components/TopNavigation';
 
 function App() {
   return (
     <Router>
       <ErrorBoundary>
+      <TopNavigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/sphere" element={<SphereWithCharacter />} />

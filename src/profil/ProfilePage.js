@@ -259,7 +259,7 @@ const ProfilePage = () => {
             <img src="/images/logo/e-mail.png" alt="Email" className="invert-colors"/>
           </a>
         </div>
-        <p>© 2024 - Johanne Vigouroux - Développeuse web full-stack</p>
+        <p>© 2026 - Johanne Vigouroux - Développeuse web full-stack</p>
       </footer>
       <div className="inner-cursor"></div>
       <div className="outer-cursor"></div>

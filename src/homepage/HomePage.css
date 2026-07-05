@@ -1,128 +1,191 @@
-/* Home.css */
+/* HomePage.css */
 
-.home-container {
-  position: relative;
+:root {
+  --neon-blue: #00f3ff;
+  --neon-purple: #c100eb;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* Container de scroll virtuel (crée la hauteur nécessaire pour scroller) */
+.scroll-container {
+  height: 500vh; /* Ajuste pour allonger ou raccourcir la durée de l'expérience */
+  background: #000;
+}
+
+/* Viewport fixe qui accueille la 3D et l'UI */
+.home-viewport {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
 }
 
+/* En-tête principal (Hero Title) */
 .home-content {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 10;
   text-align: center;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
 }
 
 .home-content h1 {
   font-size: 4em;
-  margin: 0.5em 0;
+  margin: 0.1em 0;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .home-content p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.5em 0;
+  letter-spacing: 4px;
+  color: #aaa;
 }
 
 .home-navigation {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .home-navigation a {
-  margin: 0 10px;
+  margin: 0 15px;
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .home-navigation a:hover {
-  color: #00f;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .home-content h1 {
-    font-size: 3em;
-  }
-
-  .home-content p {
-    font-size: 1.2em;
-  }
-
-  .home-navigation a {
-    font-size: 1em;
-  }
+/* --- Container des projets en 3D/HTML --- */
+.projects-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Laisse passer les interactions en dessous si besoin */
+  z-index: 5;
 }
 
-@media (max-width: 768px) {
-  .home-content h1 {
-    font-size: 2.5em;
-  }
-
-  .home-content p {
-    font-size: 1em;
-  }
-
-  .home-navigation a {
-    font-size: 0.9em;
-    margin: 0 8px;
-  }
+.project-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 90%;
+  max-width: 500px;
+  background: rgba(5, 5, 5, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(193, 0, 235, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none; /* Activé uniquement quand visible via JS */
+  transition: border-color 0.3s ease;
 }
 
-@media (max-width: 480px) {
-  .home-content h1 {
-    font-size: 2em;
-  }
-
-  .home-content p {
-    font-size: 0.9em;
-  }
-
-  .home-navigation a {
-    font-size: 0.8em;
-    margin: 0 5px;
-  }
+.project-card.active {
+  pointer-events: auto;
 }
 
+.project-card:hover {
+  border-color: var(--neon-blue);
+}
 
-/*cursor*/
-.inner-cursor {
+.project-card h2 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.project-card h3 {
+  font-size: 1em;
+  color: var(--neon-blue);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+  background: var(--neon-blue);
+  color: #fff;
+}
+
+/* --- Curseurs custom --- */
+.inner-cursor, .outer-cursor {
   position: fixed;
-  left: 10px;
-  width: 10px;
-  height: 10px;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
-  background-color: #ffffff41;
-  mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-  transition: width 0.5s, height 0.5s;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.inner-cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  transition: width 0.3s, height 0.3s;
 }
 
 .inner-cursor.grow {
-  width: 25px;
-  height: 25px;
-  transition: width 0.5s, height 0.5s;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .outer-cursor {
-  position: fixed;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
   border: 1px solid #fff;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  pointer-events: none;
-
+  transition: transform 0.1s ease-out;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+  .home-content h1 { font-size: 2.5em; }
+  .project-card { width: 85%; padding: 20px; }
+  .project-card h2 { font-size: 1.8em; }
+}
